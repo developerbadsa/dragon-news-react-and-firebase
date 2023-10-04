@@ -1,9 +1,10 @@
+import Home from "../Pages/Home/Home";
 
 
 const Layout = () => {
     return (
-        <div>
-            mainlayout
+        <div className="mx-auto max-w-6xl">
+           <Home></Home>
         </div>
     );
 };
