@@ -5,8 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      poppins: {
+        custom: ['Poppins', 'sans-serif'], 
+      },
+    },
   },
   plugins: [require("daisyui")]
 }
-
