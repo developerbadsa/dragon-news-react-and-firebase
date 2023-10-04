@@ -4,6 +4,6 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    bismillah
+    <h1 className='bg-red-400 btn'>bismillah</h1>
   </React.StrictMode>,
 )
