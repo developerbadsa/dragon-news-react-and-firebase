@@ -1,4 +1,5 @@
-import { FaBookmark, FaShare } from "react-icons/fa6";
+import { Rating } from "@mui/material";
+import { FaBookmark, FaShare, FaEye } from "react-icons/fa6";
 
 const SingleNews = ({ news }) => {
 
@@ -14,13 +15,12 @@ const SingleNews = ({ news }) => {
 
 
 
-    console.log(author);
+    console.log();
 
 
     return (
 
         <div className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-
             <div className="flex justify-between items-center px-6 py-2">
                 {/* Author */}
                 <div className="flex">
@@ -50,7 +50,7 @@ const SingleNews = ({ news }) => {
                         {title}
                     </h5>
                 </a>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
                     {details.length < 200 ?
 
 
@@ -85,6 +85,14 @@ const SingleNews = ({ news }) => {
                 </p>
 
 
+            </div>
+            <div className="flex justify-between px-8 mb-5">
+                <div>
+                    <Rating name="read-only" value={parseInt(rating.number)} readOnly />
+                </div>
+                <div className="flex gap-2 items-center">
+                    <FaEye></FaEye> <span>{total_view}</span>
+                </div>
             </div>
         </div>
 

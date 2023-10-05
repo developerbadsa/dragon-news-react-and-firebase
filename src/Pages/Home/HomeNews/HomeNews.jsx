@@ -18,7 +18,7 @@ const HomeNews = () => {
     return (
         <div>
             <h3 className="text-xl font-semibold text-slate-600 my-8">All Caterogy</h3>
-            <div>
+            <div className="grid gap-8">
                 {
                     News.map(news => <SingleNews key={news._id} news={news} ></SingleNews>)
                 }
