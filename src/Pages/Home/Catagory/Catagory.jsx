@@ -6,7 +6,7 @@ const Catagory = ({ catagory }) => {
 
     return (
         <Link>
-            <button className="btn my-2">
+            <button className="btn text-[#9F9F9F] active:text-[#9F9F9F] my-2">
                 {
                     catagory.name
                 }

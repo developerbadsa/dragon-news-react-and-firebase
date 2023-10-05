@@ -2,6 +2,7 @@ import Header from "../../Components/Header/Header";
 import Navbar from "../../Components/Header/Navbar";
 import LastestNews from "../../Components/LastestNews/LastestNews";
 import Catagories from "./Catagory/Catagories";
+import HomeNews from "./HomeNews/HomeNews";
 
 
 const Home = () => {
@@ -18,7 +19,7 @@ const Home = () => {
                     <Catagories></Catagories>
                 </div>
                 <div className="col-span-2">
-                    News
+                    <HomeNews></HomeNews>
                 </div>
                 <div>
                     social
