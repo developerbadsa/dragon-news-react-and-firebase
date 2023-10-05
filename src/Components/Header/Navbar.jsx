@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -6,8 +6,8 @@ const Navbar = () => {
     const menuItems = (
         <>
             <li><NavLink to='/'> Home </NavLink></li>
-            <li><NavLink to='/'> About </NavLink></li>
-            <li><NavLink to='/'> Career </NavLink></li>
+            <li><NavLink to='/about'> About </NavLink></li>
+            <li><NavLink to='/career'> Career </NavLink></li>
         
         </>
     )
@@ -45,17 +45,11 @@ const Navbar = () => {
                         </div>
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li>
-                            <a className="justify-between">
-                                Profile
-                                <span className="badge">New</span>
-                            </a>
-                        </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        <li><Link >Dashboard</Link></li>
+                        <li><Link>Logout</Link></li>
                     </ul>
                 </div>
-                <button className="btn rounded-none px-10 bg-[#403F3F] text-white mx-4">
+                <button className="btn rounded-none px-10 bg-[#403F3F] hover:bg-[#4f4b4b] text-white mx-4">
                     Login
                 </button>
             </div>
