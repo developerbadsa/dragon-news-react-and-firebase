@@ -3,6 +3,7 @@ import Navbar from "../../Components/Header/Navbar";
 import LastestNews from "../../Components/LastestNews/LastestNews";
 import Catagories from "./Catagory/Catagories";
 import HomeNews from "./HomeNews/HomeNews";
+import LoginWith from "./RightAside/LoginWith";
 
 
 const Home = () => {
@@ -22,7 +23,7 @@ const Home = () => {
                     <HomeNews></HomeNews>
                 </div>
                 <div>
-                    social
+                    <LoginWith></LoginWith>
                 </div>
             </main>
 
